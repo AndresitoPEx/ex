@@ -38,29 +38,86 @@ main>aside{
     padding: 10px;
     display: flex;
     flex-direction: column;
+    height: 100vh;
     width: 200px;
-    height: calc(100vh - 145px);
 }
 main>aside>h2{
     text-align: center;
     margin: 10px;
 }
-main>aside>input{
-    height: 30px;
-    margin: 8px 0;
-    color: black;
-    border: none;
+main>aside>section{
+    background-color: lightblue;
+    margin: 10px;
+    padding: 10px;
+    height: 100%;
+}
+#categorias{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    flex-wrap: wrap;
+    
+    
+}
+.categoria-item{
+    display: flex;
+    flex-direction: row;
+    
+}
+button{
+    height: 35px;
+    width: 130px;
+    margin: 10px;
     border-radius: 5px;
+    border-style: none;
+      
 }
 main>section{
     background-color: lightgreen;
-    height: calc(100vh - 145px);
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     padding: 10px;
 }
+
+
 main>section>h2{
     text-align: center;
     margin: 10px;
+}
+#productos-contenedor {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+#productos-contenedor > .producto-item {
+    width: 300px;
+    border: solid 1px #eeeded;
+    box-shadow: 0 0 4px rgba(0, 0, 0 ,0.2);
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 0.6em;
+    overflow: hidden;
+}
+#productos-contenedor > .producto-item:hover {
+    box-shadow: 0 0 6px rgba(0, 0, 0 ,0.4);
+    background-color: rgb(190, 190, 190)    ;
+}
+.producto-item img {
+    height: 160px;
+   
+}
+.producto-item header {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+.producto-item aside {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2em;
 }
 footer{
     background-color: #333;
